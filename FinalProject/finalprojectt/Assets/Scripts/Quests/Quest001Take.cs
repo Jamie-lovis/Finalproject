@@ -11,6 +11,7 @@ public class Quest001Take : MonoBehaviour
 	public GameObject UIQuest;
 	public GameObject ThePlayer;
 	public GameObject NoticeCam;
+	public GameObject MiniMap;
 
 	void Update()
 	{
@@ -30,6 +31,7 @@ public class Quest001Take : MonoBehaviour
 		{
 			if (TheDistance <= 3)
 			{
+				MiniMap.SetActive(false);
 				AttackBlocker.BlockSword = 2;
 				Screen.lockCursor = false;
 				Cursor.visible = true;

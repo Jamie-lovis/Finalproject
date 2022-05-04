@@ -33,6 +33,7 @@ public class Quest001Complete : MonoBehaviour
 			if (TheDistance <= 3)
 			{
 				QuestManager.SubQuestNumber = 0;
+				GlobalCash.GoldAmount += 100;
 				ExMark.SetActive(false);
 				GlobalExp.CurrentExp += 100;
 				ActionDisplay.SetActive(false);
