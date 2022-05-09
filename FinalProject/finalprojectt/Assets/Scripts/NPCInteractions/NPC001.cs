@@ -54,10 +54,14 @@ public class NPC001 : MonoBehaviour
 
 	IEnumerator NPC001Active()
 	{
+		if (QuestManager.ActiveQuestNumber == 2)
+        {
+
+        }
 		TextBox.SetActive(true);
 		NPCName.GetComponent<Text>().text = "Warrior";
 		NPCName.SetActive(true);
-		NPCText.GetComponent<Text>().text = "Hello friend, I may have a quest for you if you wish to accept it. Please come back later on this afternoon.";
+		NPCText.GetComponent<Text>().text = "We have a sticky situation, some spiders are surrounding the village. Kill them and their leader; here is the key to gates.";
 		NPCText.SetActive(true);
 		yield return new WaitForSeconds(5.5f);
 		NPCName.SetActive(false);
