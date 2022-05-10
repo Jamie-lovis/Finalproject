@@ -61,7 +61,7 @@ public class NPC001 : MonoBehaviour
 		TextBox.SetActive(true);
 		NPCName.GetComponent<Text>().text = "Warrior";
 		NPCName.SetActive(true);
-		NPCText.GetComponent<Text>().text = "We have a sticky situation, some spiders are surrounding the village. Kill them and their leader; here is the key to gates.";
+		NPCText.GetComponent<Text>().text = "We have a sticky situation, some spiders are surrounding the village. Kill them, heres the key.";
 		NPCText.SetActive(true);
 		yield return new WaitForSeconds(5.5f);
 		NPCName.SetActive(false);

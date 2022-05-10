@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9113501092253305557
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 1
+    value: 0
+  color:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
+  center:
+    overrideState: 1
+    value: {x: 0.5, y: 0.5}
+  intensity:
+    overrideState: 1
+    value: 0.436
+  smoothness:
+    overrideState: 1
+    value: 0.2
+  roundness:
+    overrideState: 1
+    value: 1
+  rounded:
+    overrideState: 1
+    value: 0
+  mask:
+    overrideState: 1
+    value: {fileID: 0}
+    defaultState: 1
+  opacity:
+    overrideState: 1
+    value: 1
 --- !u!114 &-8318963293133382601
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -67,7 +111,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 10.36
+    value: 20
   threshold:
     overrideState: 1
     value: 1
@@ -79,10 +123,10 @@ MonoBehaviour:
     value: 65472
   diffusion:
     overrideState: 1
-    value: 7
+    value: 8.67
   anamorphicRatio:
     overrideState: 1
-    value: 0
+    value: 0.2
   color:
     overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -112,6 +156,7 @@ MonoBehaviour:
   - {fileID: -8318963293133382601}
   - {fileID: 5679244606534375976}
   - {fileID: -3711628646354497174}
+  - {fileID: -9113501092253305557}
 --- !u!114 &5679244606534375976
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -130,13 +175,13 @@ MonoBehaviour:
     value: 1
   filtering:
     overrideState: 1
-    value: {x: 43.763638, y: 95}
+    value: {x: 31.778326, y: 82.49568}
   minLuminance:
     overrideState: 1
     value: 0.5
   maxLuminance:
     overrideState: 1
-    value: 9
+    value: 7.2
   keyValue:
     overrideState: 1
     value: 1
