@@ -13,7 +13,7 @@ public class NPC001 : MonoBehaviour
 	public GameObject TextBox;
 	public GameObject NPCName;
 	public GameObject NPCText;
-
+	public GameObject GateOpen;
 
 	void Update()
 	{
@@ -56,19 +56,34 @@ public class NPC001 : MonoBehaviour
 	{
 		if (QuestManager.ActiveQuestNumber == 2)
         {
-
-        }
-		TextBox.SetActive(true);
-		NPCName.GetComponent<Text>().text = "Warrior";
-		NPCName.SetActive(true);
-		NPCText.GetComponent<Text>().text = "We have a sticky situation, some spiders are surrounding the village. Kill them, heres the key.";
-		NPCText.SetActive(true);
-		yield return new WaitForSeconds(5.5f);
-		NPCName.SetActive(false);
-		NPCText.SetActive(false);
-		TextBox.SetActive(false);
-		ActionDisplay.SetActive(true);
-		ActionText.SetActive(true);
+			TextBox.SetActive(true);
+			NPCName.GetComponent<Text>().text = "Warrior";
+			NPCName.SetActive(true);
+			NPCText.GetComponent<Text>().text = "We have a sticky situation, some spiders are surrounding the village. Kill them, heres the key.";
+			GateOpen.SetActive(true);
+			NPCText.SetActive(true);
+			yield return new WaitForSeconds(5.5f);
+			NPCName.SetActive(false);
+			NPCText.SetActive(false);
+			TextBox.SetActive(false);
+			ActionDisplay.SetActive(true);
+			ActionText.SetActive(true);
+		}
+        else
+        {
+			TextBox.SetActive(true);
+			NPCName.GetComponent<Text>().text = "Warrior";
+			NPCName.SetActive(true);
+			NPCText.GetComponent<Text>().text = "Come back to me when youre better equipped!";
+			NPCText.SetActive(true);
+			yield return new WaitForSeconds(5.5f);
+			NPCName.SetActive(false);
+			NPCText.SetActive(false);
+			TextBox.SetActive(false);
+			ActionDisplay.SetActive(true);
+			ActionText.SetActive(true);
+		}
+		
 
 	}
 

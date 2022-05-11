@@ -23,10 +23,10 @@ public class Scene01 : MonoBehaviour
 		Camera2.SetActive(true);
 		Camera1.SetActive(false);
 		FadeIn.SetActive(false);
-		yield return new WaitForSeconds(10);
+		yield return new WaitForSeconds(8);
 		Camera3.SetActive(true);
 		Camera2.SetActive(false);
-		yield return new WaitForSeconds(4);
+		yield return new WaitForSeconds(2);
 		FadeOut.SetActive(true);
 		yield return new WaitForSeconds(1);
 		ThePlayer.SetActive(true);
