@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpiderBossEnemy : MonoBehaviour
 {
 
-	public int EnemyHealth = 1;
+	public int EnemyHealth = 20;
 	public GameObject TheSpider;
 	public int SpiderStatus;
 	public int BaseXP = 100;

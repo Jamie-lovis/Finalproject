@@ -13,7 +13,7 @@ public class SpiderBossAttack : MonoBehaviour
     {
         if (AttackTrigger == 0)
         {
-            TheEnemy.GetComponent<Animation>().Play("Walk");
+            TheEnemy.GetComponent<Animation>().Play("BossWalk");
         }
         if (AttackTrigger == 1)
         {
