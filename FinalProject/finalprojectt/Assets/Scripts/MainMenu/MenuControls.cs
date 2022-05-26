@@ -23,6 +23,6 @@ public class MenuControls : MonoBehaviour
     {
         menuMusic.Stop();
         loadingGame.SetActive(true);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
